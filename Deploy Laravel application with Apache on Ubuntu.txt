@@ -40,9 +40,8 @@ sudo a2ensite laravel.conf
 sudo systemctl restart apache2
 
 7. upload your laravel project
-git clone
-cp .env.example .env
-sudo cp .env .env.example
+sudo git clone
+sudo cp .env.example .env
 
 
 8. change permission of laravel project
