@@ -1,6 +1,6 @@
-1. Create a Dockerfile: In the root of your Laravel repository (without any file extension)
-<code>
-  # Base image
+<ol>
+  <li>Create a Dockerfile: In the root of your Laravel repository (without any file extension)</li>
+  <code># Base image
   FROM php:8.2-fpm
 
   # Set working directory
@@ -37,8 +37,8 @@
   EXPOSE 9000
 
   # Run supervisor
-  CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
-</code>
+  CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]</code>
+</ol>
 
 2. Create a supervisor configuration: In the .github/workflows directory, create a file named supervisord.conf and add the following content
 <code>
