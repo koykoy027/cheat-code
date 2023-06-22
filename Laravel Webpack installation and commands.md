@@ -1,4 +1,4 @@
-# Laravel Webpack installation and commands
+## Laravel Webpack installation and commands
 
 1. Install Laravel Jetstream
 ```
@@ -14,7 +14,7 @@ npm install && npm run dev
 php artisan migrate
 ```
 
-3. Install Laravel Breeze
+2. Install Laravel Breeze
 ```
 composer require laravel / breeze--dev
 ```
@@ -28,50 +28,14 @@ npm install && npm run dev
 php artisan migrate
 ```
 
-3. Install Flowbite tailwindcss
-```
-npm install - D tailwindcss postcss autoprefixer flowbite
-npx tailwindcss init - p
-```
 
-4. open tailwind.config.js
-```
-module.exports = {
-	content: [
-		"./resources/**/*.blade.php",
-		"./resources/**/*.js",
-		"./resources/**/*.vue",
-		"./node_modules/flowbite/**/*.js"
-	],
-	theme: {
-		extend: {},
-	},
-	plugins: [
-		require('flowbite/plugin')
-	],
-}
-```
-
-5. open app.css and paste
-```
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@vite(['resources/css/app.css', 'resources/js/app.js'])
-```
-
-### open app.js and paste
-```
-import 'flowbite';
-```
-
-4. Install CodeSeven Toastr
+## Install CodeSeven Toastr
+1. Install using npm
 ```
 npm install--save toastr
 ```
 
-### open app.js and paste
+2. open resources/js/app.js and paste
 ```
 import toastr from 'toastr';
 toastr.options = {
@@ -92,13 +56,13 @@ toastr.options = {
 window.toastr = toastr;
 ```
 
-### open app.scc and paste
+2. open resources/css/app.css and paste
 ```
 @import '../../node_modules/toastr/toastr.scss';
 import 'toastr/toastr.scss';
 ```
-### how to apply in blade
 
+3. how to apply in blade
 ```
 @if (session('status') === 'password-updated')
 	<script>
@@ -109,7 +73,7 @@ import 'toastr/toastr.scss';
 @endif
 ```
 
-# LARAVEL COMMAND
+## LARAVEL COMMAND
 ```php artisan db: seed--class=SpecialOptionTableSeeder
 
 CREATE A MODEL AND ITS ASSOCIATED MIGRATION AND CONTROLLER ```php artisan make:model ModelName - mc```
