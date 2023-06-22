@@ -1,4 +1,4 @@
-# Base image
+### Base image
 FROM php:8.2-fpm
 
 # Set working directory
