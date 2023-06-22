@@ -1,5 +1,5 @@
-<ol>
-  <li>Create a Dockerfile: In the root of your Laravel repository (without any file extension)</li>
+
+  # Create a Dockerfile: In the root of your Laravel repository (without any file extension)
   <code>
   # Base image
   FROM php:8.2-fpm
