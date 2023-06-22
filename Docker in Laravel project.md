@@ -1,4 +1,8 @@
-<code>
+# Docker in Laravel project
+
+
+1. Create a Dockerfile: In the root of your Laravel repository, create a file named Dockerfile (without any file extension) and add the following content:
+```
 # Base image
 FROM php:8.2-fpm
 
@@ -37,4 +41,62 @@ EXPOSE 9000
 
 # Run supervisor
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
-</code>
+```
+
+2. Create a supervisor configuration: In the .github/workflows directory, create a file named supervisord.conf and add the following content:
+```
+[program:laravel-worker]
+process_name=%(program_name)s_%(process_num)02d
+command=php /var/www/html/artisan queue:work --sleep=3 --tries=3
+autostart=true
+autorestart=true
+user=www-data
+numprocs=1
+redirect_stderr=true
+stdout_logfile=/var/www/html/storage/logs/worker.log
+
+```
+
+3. Create a GitHub Actions workflow: In the .github/workflows directory, create a file named laravel.yml (or any name ending with .yml) and add the following content:
+```
+name: Laravel CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  laravel:
+    runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: password
+          MYSQL_DATABASE: laravel
+        ports:
+          - 3306:3306
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Docker
+        uses: docker/setup-buildx-action@v1
+
+      - name: Copy .env
+        run: cp .env.example .env
+
+      - name: Install Composer dependencies
+        run: composer install --no-interaction --optimize-autoloader
+
+      - name: Generate key
+        run: php artisan key:generate
+
+      - name: Run tests
+        run: php artisan test
+
+```
