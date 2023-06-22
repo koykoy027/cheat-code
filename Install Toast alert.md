@@ -1,4 +1,4 @@
-## Install CodeSeven Toastr
+# Install CodeSeven Toastr
 1. Install using npm
 ```
 npm install --save toastr
