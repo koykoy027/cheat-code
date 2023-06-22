@@ -1,7 +1,7 @@
 ## Install CodeSeven Toastr
 1. Install using npm
 ```
-npm install--save toastr
+npm install --save toastr
 ```
 
 2. open resources/js/app.js and paste
