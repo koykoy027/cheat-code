@@ -1,12 +1,10 @@
 # Laravel Webpack installation and commands
 
 1. Install Laravel Jetstream
-```
-composer require laravel / jetstream
-php artisan jetstream:install livewire
-npm install && npm run dev
-php artisan migrate
-```
+```composer require laravel / jetstream```
+```php artisan jetstream:install livewire```
+```npm install && npm run dev```
+```php artisan migrate```
 2. Install Laravel Breeze
 ```
 composer require laravel / breeze--dev
@@ -95,11 +93,9 @@ import 'toastr/toastr.scss';
 @endif
 ```
 
-LARAVEL COMMAND
+# LARAVEL COMMAND
 ```php artisan db: seed--class=SpecialOptionTableSeeder
 
-
-SHORTCUT COMMANDS
 CREATE A MODEL AND ITS ASSOCIATED MIGRATION AND CONTROLLER ```php artisan make:model ModelName - mc```
 CREATE A RESOURCE CONTROLLER WITH CRUD METHODS `php artisan make:controller ControllerName--resource`
 CREATES A MIDDLEWARE `php artisan make:middleware MiddlewareName`
