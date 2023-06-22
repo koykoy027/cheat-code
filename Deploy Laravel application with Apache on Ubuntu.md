@@ -2,8 +2,8 @@
 
 1. update ubuntu first
 ```
-    sudo apt-get update
-    sudo apt-get install apache2
+sudo apt-get update
+sudo apt-get install apache2
 ```
 
 3. this is optional, only run if the php requirements are <= 8.2.6
@@ -72,27 +72,27 @@
 
 # Situational
 
-> install Node.js and npm
+- install Node.js and npm
 ```
     sudo apt-get install nodejs npm
 ```
 
-> install git
+- install git
 ```
     sudo apt install git
 ```
 
-> to ignore platform PHP requirements
+- to ignore platform PHP requirements
 ```
     composer install --ignore-platform-reqs
 ```
 
-> restart apache 2 server
+- restart apache 2 server
 ```
     sudo systemctl restart apache2 | sudo service apache2 restart
 ```
 
-> uninstall all package in php including composer
+- uninstall all package in php including composer
 ```
     sudo apt-get purge 'php*'
 ```
