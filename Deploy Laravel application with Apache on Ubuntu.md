@@ -1,8 +1,9 @@
 # Deploy Laravel application with Apache on Ubuntu
 
 1. update ubuntu first
+> This is a blockquote.
 
-'code'
+
     'sudo apt-get update'
     sudo apt-get install apache2
 
