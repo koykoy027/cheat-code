@@ -1,4 +1,5 @@
-### Base image
+<code>
+# Base image
 FROM php:8.2-fpm
 
 # Set working directory
@@ -36,3 +37,4 @@ EXPOSE 9000
 
 # Run supervisor
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
+</code>
