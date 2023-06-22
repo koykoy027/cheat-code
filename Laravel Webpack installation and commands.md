@@ -34,7 +34,7 @@ npm install - D tailwindcss postcss autoprefixer flowbite
 npx tailwindcss init - p
 ```
 
-### open tailwind.config.js
+4. open tailwind.config.js
 ```
 module.exports = {
 	content: [
@@ -52,7 +52,7 @@ module.exports = {
 }
 ```
 
-### open app.css and paste
+5. open app.css and paste
 ```
 @tailwind base;
 @tailwind components;
