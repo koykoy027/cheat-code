@@ -1,15 +1,18 @@
 # Deploy Laravel application with Apache on Ubuntu
 
 1. update ubuntu first
-    'sudo apt-get update
-    sudo apt-get install apache2'
+<code>
+    sudo apt-get update
+    sudo apt-get install apache2
+</code>
 
-2. this is optional, only run if the php requirements are <= 8.2.6
+3. this is optional, only run if the php requirements are <= 8.2.6
 <code>
     sudo add-apt-repository -y ppa:ondrej/php 
     sudo apt-get update
 </code>
-3. install all php package
+
+4. install all php package
 <code>
     sudo apt install php php-cli php-mbstring php-xml php-zip php-mysql composer
 </code>
@@ -23,7 +26,9 @@
 6. setup customize configuration
 <code>
     sudo nano /etc/apache2/sites-available/laravel.conf
+</code>
 
+<code>
    <VirtualHost *:80>
         ServerAdmin 13.210.149.176
         ServerName 13.210.149.176
@@ -36,7 +41,9 @@
             allow from all
         </Directory>
     </VirtualHost>
+</code>
 
+<code>
     sudo systemctl restart apache2
 </code>
 
