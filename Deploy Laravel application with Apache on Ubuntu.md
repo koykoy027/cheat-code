@@ -73,26 +73,26 @@
 # Situational
 
 > install Node.js and npm
-<code>
+```
     sudo apt-get install nodejs npm
-</code>
+```
 
 > install git
-<code>
+```
     sudo apt install git
-</code>
+```
 
 > to ignore platform PHP requirements
-<code>
+```
     composer install --ignore-platform-reqs
-</code>
+```
 
 > restart apache 2 server
-<code>
+```
     sudo systemctl restart apache2 | sudo service apache2 restart
-</code>
+```
 
 > uninstall all package in php including composer
-<code>
+```
     sudo apt-get purge 'php*'
-</code>
+```
