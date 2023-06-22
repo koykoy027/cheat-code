@@ -38,7 +38,7 @@ module.exports = {
 }
 ```
 
-open app.css and paste
+### open app.css and paste
 ```
 @tailwind base;
 @tailwind components;
@@ -53,7 +53,9 @@ import 'flowbite';
 ```
 
 4. Install CodeSeven Toastr
-```npm install--save toastr```
+```
+npm install--save toastr
+```
 
 ### open app.js and paste
 ```
@@ -94,7 +96,7 @@ import 'toastr/toastr.scss';
 ```
 
 LARAVEL COMMAND
-php artisan db: seed--class=SpecialOptionTableSeeder
+```php artisan db: seed--class=SpecialOptionTableSeeder
 
 
 SHORTCUT COMMANDS
