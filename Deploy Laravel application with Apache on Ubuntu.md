@@ -2,6 +2,7 @@
 
 1. update ubuntu first
 
+'code'
     'sudo apt-get update'
     sudo apt-get install apache2
 
