@@ -74,10 +74,15 @@ import 'toastr/toastr.scss';
 ```
 
 ## LARAVEL COMMAND
-```php artisan db: seed--class=SpecialOptionTableSeeder```
+Run specefic db seed base on class
+```
+php artisan db: seed--class=SpecialOptionTableSeeder
+```
 
 CREATE A MODEL AND ITS ASSOCIATED MIGRATION AND CONTROLLER
-```php artisan make:model ModelName - mc```
+```
+php artisan make:model ModelName - mc
+```
 
 CREATE A RESOURCE CONTROLLER WITH CRUD METHODS
 ```
