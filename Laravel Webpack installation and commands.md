@@ -74,12 +74,24 @@ import 'toastr/toastr.scss';
 ```
 
 ## LARAVEL COMMAND
-```php artisan db: seed--class=SpecialOptionTableSeeder
+```php artisan db: seed--class=SpecialOptionTableSeeder```
 
-CREATE A MODEL AND ITS ASSOCIATED MIGRATION AND CONTROLLER ```php artisan make:model ModelName - mc```
-CREATE A RESOURCE CONTROLLER WITH CRUD METHODS `php artisan make:controller ControllerName--resource`
-CREATES A MIDDLEWARE `php artisan make:middleware MiddlewareName`
-RUN SPECEFIC SEEDER CLASS `php artisan db: seed--class=SpecialOptionTableSeeder`
+CREATE A MODEL AND ITS ASSOCIATED MIGRATION AND CONTROLLER
+```php artisan make:model ModelName - mc```
 
-
-SCAFFOLD BASIC LOGIN AND REGISTRATION VIEWS AND LOGIC `php artisan make: auth`
+CREATE A RESOURCE CONTROLLER WITH CRUD METHODS
+```
+php artisan make:controller ControllerName--resource
+```
+CREATES A MIDDLEWARE
+```
+php artisan make:middleware MiddlewareName
+```
+RUN SPECEFIC SEEDER CLASS
+```
+php artisan db: seed--class=SpecialOptionTableSeeder
+```
+SCAFFOLD BASIC LOGIN AND REGISTRATION VIEWS AND LOGIC
+```
+php artisan make: auth
+```
