@@ -100,7 +100,7 @@ LARAVEL COMMAND
 
 
 SHORTCUT COMMANDS
-CREATE A MODEL AND ITS ASSOCIATED MIGRATION AND CONTROLLER `php artisan make:model ModelName - mc`
+CREATE A MODEL AND ITS ASSOCIATED MIGRATION AND CONTROLLER ```php artisan make:model ModelName - mc```
 CREATE A RESOURCE CONTROLLER WITH CRUD METHODS `php artisan make:controller ControllerName--resource`
 CREATES A MIDDLEWARE `php artisan make:middleware MiddlewareName`
 RUN SPECEFIC SEEDER CLASS `php artisan db: seed--class=SpecialOptionTableSeeder`
