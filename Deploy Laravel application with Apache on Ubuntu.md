@@ -1,12 +1,8 @@
 # Deploy Laravel application with Apache on Ubuntu
 
 1. update ubuntu first
-> This is a blockquote.
-
-
-    'sudo apt-get update'
+    sudo apt-get update
     sudo apt-get install apache2
-
 
 2. this is optional, only run if the php requirements are <= 8.2.6
 <code>
