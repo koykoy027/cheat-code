@@ -13,8 +13,16 @@ git config user.name "koykoy027"
 3. how to upload project into new repository
 ```
 git init
+```
+```
 git add .
+```
+```
 git commit -m "inital commit"
+```
+```
 git remote add origin <repo link>
+```
+```
 git push -u origin master
 ```
