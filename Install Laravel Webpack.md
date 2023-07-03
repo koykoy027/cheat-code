@@ -2,7 +2,7 @@
 
 1. Install Laravel Jetstream
 ```
-composer require laravel / jetstream
+composer require laravel/jetstream
 ```
 ```
 php artisan jetstream:install livewire
@@ -16,10 +16,10 @@ php artisan migrate
 
 2. Install Laravel Breeze
 ```
-composer require laravel / breeze--dev
+composer require laravel/breeze--dev
 ```
 ```
-php artisan breeze: install
+php artisan breeze:install
 ```
 ```
 npm install && npm run dev
