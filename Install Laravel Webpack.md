@@ -28,6 +28,20 @@ npm install && npm run dev
 php artisan migrate
 ```
 
+3. Install Laravel and reactjs
+```
+composer require laravel/ui
+```
+
+```
+php artisan ui react
+```
+
+install react with auth (optional)
+```
+php artisan ui react --auth
+```
+
 ## LARAVEL COMMAND
 Run specefic db seed base on class
 ```
