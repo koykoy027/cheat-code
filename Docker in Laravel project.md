@@ -1,7 +1,7 @@
 # Docker in Laravel project
 
 
-1. Create a Dockerfile: In the root of your Laravel repository, create a file named Dockerfile (without any file extension) and add the following content:
+1. **Create a Dockerfile: In the root of your Laravel repository, create a file named Dockerfile (without any file extension) and add the following content:**
 ```
 # Base image
 FROM php:8.2-fpm
@@ -42,8 +42,15 @@ EXPOSE 9000
 # Run supervisor
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
 ```
+2. **Create .dockerignore file**
+```
+/vendor
+/node_modules
+/.git
+/.idea
+```
 
-2. Create a supervisor configuration: In the .github/workflows directory, create a file named supervisord.conf and add the following content:
+3. **Create a supervisor configuration: In the .github/workflows directory, create a file named supervisord.conf and add the following content:**
 ```
 [program:laravel-worker]
 process_name=%(program_name)s_%(process_num)02d
@@ -57,7 +64,7 @@ stdout_logfile=/var/www/html/storage/logs/worker.log
 
 ```
 
-3. Create a GitHub Actions workflow: In the .github/workflows directory, create a file named laravel.yml (or any name ending with .yml) and add the following content:
+4. **Create a GitHub Actions workflow: In the .github/workflows directory, create a file named laravel.yml (or any name ending with .yml) and add the following content:**
 ```
 name: Laravel CI
 
