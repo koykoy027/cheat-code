@@ -91,6 +91,13 @@ createInertiaApp({
   },
 })
 ```
+
+3. **Install Styled Components** 
+
+```
+npm install styled-components
+```
+
 </details>
 
 <details>
