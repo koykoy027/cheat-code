@@ -1,16 +1,24 @@
-### Install Reactjs in Laravel project using inertiajs, vite plugins and react-router-dom
+# Full guide in Reactjs in Laravel project using inertiajs
 
-## Server-side setup
+## Install Reactjs in Laravel project using inertiajs, vite plugins, and react-router-dom
 
+<details>
+<summary>
+    <b>Server-side setup</b>
+</summary>
+<br />
+     
 1. **First, install the Inertia server-side adapter using the Composer package manager.**
+
 ```
 composer require inertiajs/inertia-laravel
 ```
 
 2. **Root template**
 <p>
-    Next, setup the root template that will be loaded on the first page visit to your application. This will be used to load your site assets (CSS and JavaScript), and will also contain a root <div> in which to boot your JavaScript application.
+    Next, set up the root template that will be loaded on the first-page visit to your application. This will be used to load your site assets (CSS and JavaScript), and will also contain a root <div> in which to boot your JavaScript application.
 </p>
+        
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -28,14 +36,15 @@ composer require inertiajs/inertia-laravel
 
 3. **Middleware**
 <p>
-Next we need to setup the Inertia middleware. You can accomplish this by publishing the *HandleInertiaRequests* middleware to your application, which can be done using the following Artisan command.
+Next, we need to set up the Inertia middleware. You can accomplish this by publishing the <code>HandleInertiaRequests</code> middleware to your application, which can be done using the following Artisan command.
 </p>
+
 ```
 php artisan inertia:middleware
 ```
 
 <p>
-Once the middleware has been published, register the *HandleInertiaRequests* middleware in your *App\Http\Kernel* as the last item in your web middleware group.
+Once the middleware has been published, register the <code>HandleInertiaRequests</code> middleware in your <code>App\Http\Kernel</code> as the last item in your web middleware group.
 </p>
 
 ```
@@ -45,11 +54,20 @@ Once the middleware has been published, register the *HandleInertiaRequests* mid
 ],
 ```
 
-## Client-side setup
+</details>
+
+
+<details>
+<summary>
+    <b>Client-side setup</b>
+</summary>
+<br />
+
 1. **Install dependencies - Install inertia, vite, and router**
 <p>
 First, install the Inertia client-side adapter corresponding to your framework of choice.
 </p>
+
 ```
 npm install @inertiajs/react @vitejs/plugin-react react-router-dom
 ```
@@ -73,3 +91,33 @@ createInertiaApp({
   },
 })
 ```
+</details>
+
+## Simple CRUD 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
