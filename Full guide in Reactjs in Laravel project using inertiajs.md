@@ -1,6 +1,6 @@
 # Full guide in Reactjs in Laravel project using inertiajs
 
-## Install Reactjs in Laravel project using inertiajs, vite plugins, and react-router-dom
+## Installation using vite plugins, and react-router-dom, and tailwindcss
 
 <details>
 <summary>
@@ -91,6 +91,13 @@ createInertiaApp({
   },
 })
 ```
+</details>
+
+<details>
+    <summary>
+        <b>TailwindCSS setup</b>
+    </summary>
+    <br />
 </details>
 
 ## Simple CRUD 
