@@ -16,8 +16,10 @@ composer require inertiajs/inertia-laravel
 
 2. **Root template**
 <p>
-    Next, set up the root template that will be loaded on the first-page visit to your application. This will be used to load your site assets (CSS and JavaScript), and will also contain a root <div> in which to boot your JavaScript application.
+    Next, set up the root template that will be loaded on the first-page visit to your application <code>resources/views/app.blade.php</code>. This will be used to load your site assets (CSS and JavaScript), and will also contain a root in which to boot your JavaScript application.
 </p>
+
+
         
 ```
 <!DOCTYPE html>
@@ -74,7 +76,7 @@ npm install @inertiajs/react @vitejs/plugin-react react-router-dom
 
 2. **Initialize the Inertia app**
 <p>
-Next, update your main JavaScript file to boot your Inertia app. To accomplish this, we'll initialize the client-side framework with the base Inertia component.
+Next, update your main JavaScript file to boot your Inertia app. To accomplish this, we'll initialize the client-side framework with the base Inertia component <code>resources/js/app.jsx</code>.
 </p>
 
 ```
