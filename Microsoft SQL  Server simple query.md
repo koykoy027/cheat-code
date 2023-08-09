@@ -16,6 +16,8 @@ SELECT id FROM users;
 The id column will now automatically generate unique incrementing values for each row in your existing data.
 
 - ### force import of a database regardless of constrained and foreign key
+
+1. **First way is**
 ```
 -- Disable foreign key checks
 SET FOREIGN_KEY_CHECKS = 0;
@@ -23,6 +25,24 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- Import data
 -- Your import statements go here
 
+```
+
+```
 -- Enable foreign key checks
 SET FOREIGN_KEY_CHECKS = 1;
+
+-- Import data
+-- Your import statements go here
 ```
+
+2. **2nd way is**
+
+```
+-- Disable all foreign key constraints
+EXEC sp_MSforeachtable "ALTER TABLE ? NOCHECK CONSTRAINT all";
+```
+
+```
+-- Enable all foreign key constraints
+EXEC sp_MSforeachtable "ALTER TABLE ? WITH CHECK CHECK CONSTRAINT all";
+``
