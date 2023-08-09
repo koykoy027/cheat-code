@@ -28,3 +28,9 @@ php artisan db: seed--class=SpecialOptionTableSeeder
 ```
 php artisan make: auth
 ```
+
+- **CONVERT DATE TO FORMAT MONTH YEAR**
+> eg. July 2023
+```
+{{ \Carbon\Carbon::parse($newEducationalAttainment->period_of_attendance_from)->format('F Y') }}
+```
