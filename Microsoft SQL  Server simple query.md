@@ -45,4 +45,12 @@ EXEC sp_MSforeachtable "ALTER TABLE ? NOCHECK CONSTRAINT all";
 ```
 -- Enable all foreign key constraints
 EXEC sp_MSforeachtable "ALTER TABLE ? WITH CHECK CHECK CONSTRAINT all";
-``
+```
+
+- **Turn ON and Turn OFF identity**
+```
+SET IDENTITY_INSERT profile_tblMain ON;
+```
+```
+SET IDENTITY_INSERT profile_tblMain OFF;
+```
