@@ -36,3 +36,13 @@ php artisan make: auth
 ```
 {{ \Carbon\Carbon::parse($data->birthday)->format('F d, Y') }}
 ```
+
+- **CONVERT 12hr FORMAT**
+```
+{{ \Carbon\Carbon::parse($data->birthday)->format('H:i') }}
+```
+
+- **CONVERT 24hr FORMAT**
+```
+{{ \Carbon\Carbon::parse($data->birthday)->format('h:i A') }}
+```
