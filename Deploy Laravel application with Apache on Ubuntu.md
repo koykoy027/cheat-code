@@ -96,3 +96,7 @@ sudo systemctl restart apache2 | sudo service apache2 restart
 ```
 sudo apt-get purge 'php*'
 ```
+- rename folder
+```
+sudo mv old_name new_name
+```
