@@ -71,16 +71,18 @@
   ```js
   const [students, setStudents] = useState([]);
   
-  const fetchData = async () => {
-    try {
-      const studentsData = await fetchStudents();
-      setStudents(studentsData);
-    } catch (error) {
-      console.log('Something went wrong', error);
-    }
-  };
-  
-  fetchData();
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const studentsData = await fetchStudents();
+        setStudents(studentsData);
+      } catch (error) {
+        console.log("Something went wrong", error);
+      }
+    };
+
+    fetchData();
+  }, []);
   ```
   
 </details>
