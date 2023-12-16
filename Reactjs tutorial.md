@@ -1,4 +1,4 @@
-# REACTJS KNOWLEDGE
+# REACTJS DOCUMENTATION
 <details>
   <summary>fetch-in-single-components</summary>
 
