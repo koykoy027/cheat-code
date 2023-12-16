@@ -29,6 +29,8 @@
 
 </details>
 
+---
+
 <details>
   <summary>fetch-via-seperate-folders</summary>
 
@@ -37,19 +39,7 @@
   VITE_API_URL="http://127.0.0.1:8000/api"
   ```
 
-  ### src\lib\apis\students.ts
-  ```js
-  import { fetchJson } from '../helpers/http';
-  
-  const baseUrl = import.meta.env.VITE_API_URL || '';
-  
-  export const fetchStudents = async () => {
-    const url = `${baseUrl}/students`;
-    return fetchJson(url);
-  };
-  ```
-
-  ### src\lib\helpers\http.ts
+### src\lib\helpers\http.ts
   ```js
   export const fetchJson = async (url: string, options?: RequestInit) => {
     try {
@@ -64,6 +54,18 @@
       console.error('Error fetching data:', error);
       throw error;
     }
+  };
+  ```
+
+  ### src\lib\apis\students.ts
+  ```js
+  import { fetchJson } from '../helpers/http';
+  
+  const baseUrl = import.meta.env.VITE_API_URL || '';
+  
+  export const fetchStudents = async () => {
+    const url = `${baseUrl}/students`;
+    return fetchJson(url);
   };
   ```
 
