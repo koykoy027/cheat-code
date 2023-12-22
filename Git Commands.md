@@ -29,22 +29,37 @@ git config --global credential.helper store
 ---
 
 4. How to upload project into new repository
+
+To check the global Git user name:
 ```
-git init
+git config --global user.name
+
 ```
+
+To check the global Git user email:
 ```
-git add .
+git config --global user.email
 ```
+
+To check the list of all configurations, including user-related configurations:
 ```
-git commit -m "inital commit"
+git config --global --list
 ```
+
+If you are looking to see which user is currently authenticated for a specific repository, you can use the following command:
+```
+git config user.name
+```
+
+If you want to see information about the currently logged-in user on your Ubuntu system, you can use the whoami command:
+```
+whoami
+```
+
+
+
+
+
+
 
 ---
-
-
-```
-git remote add origin <repo link>
-```
-```
-git push -u origin master
-```
