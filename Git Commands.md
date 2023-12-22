@@ -28,7 +28,7 @@ git config --global credential.helper store
 
 ---
 
-4. How to upload project into new repository
+4. Verify Authentication
 
 To check the global Git user name:
 ```
