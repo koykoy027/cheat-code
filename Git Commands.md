@@ -1,18 +1,16 @@
-1. Git global auth/credentials
+## Git global auth/credentials
 ```
 git config --global user.email "villanuevajoshua27@gmail.com"
 git config --global user.name "koykoy027"
 ```
----
 
-2. Git remote auth/credentials
+## Git remote auth/credentials
 ```
 git config user.email "villanuevajoshua27@gmail.com"
 git config user.name "koykoy027"
 ```
----
 
-3. How to Login via Personal access token
+## How to Login via Personal access token
 ```
 git credential-store --file ~/.git-credentials store <<EOF
 protocol=https
@@ -26,9 +24,7 @@ EOF
 git config --global credential.helper store
 ```
 
----
-
-4. Verify Authentication
+## Verify Authentication
 
 To check the global Git user name:
 ```
@@ -56,10 +52,24 @@ If you want to see information about the currently logged-in user on your Ubuntu
 whoami
 ```
 
+## update git
 
+update default branch, from `master ` to `main`
+```
+git branch -m master main
+git fetch origin
+git branch -u main main
+git remote set-head origin -a
+```
 
+If the remote URL or branch name is incorrect, update it using the following commands
+```
+git remote set-url origin <new-remote-url>
+git branch --set-upstream-to=origin/<correct-branch-name> main
+```
 
-
-
-
----
+## How to ignore all files and folders
+```
+*
+!*gitignore
+```
