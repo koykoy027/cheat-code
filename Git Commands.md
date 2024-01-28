@@ -1,3 +1,5 @@
+# Git commands
+
 ## Git global auth/credentials
 ```
 git config --global user.email "villanuevajoshua27@gmail.com"
