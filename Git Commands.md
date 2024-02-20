@@ -75,3 +75,8 @@ git branch --set-upstream-to=origin/<correct-branch-name> main
 *
 !*gitignore
 ```
+
+## How to revert commit with SHA
+```
+git revert -m 1 <SHA>
+```
