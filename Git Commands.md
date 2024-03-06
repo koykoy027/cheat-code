@@ -31,7 +31,6 @@ git config --global credential.helper store
 To check the global Git user name:
 ```
 git config --global user.name
-
 ```
 
 To check the global Git user email:
