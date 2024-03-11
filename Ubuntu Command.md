@@ -9,6 +9,7 @@
 - `mkdir directory_name`: Create a new directory.
 - `ls`: List files and directories in the current location.
 - `cd directory_path`: Change the current directory.
+- `df -h` check storage.
 
 ## Package Management
 
