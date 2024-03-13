@@ -1,4 +1,4 @@
-# Microsoft SQL  Server simple query
+# Microsoft SQL Server simple query
 
 - ### Add a new primary key column that automatically increments for your existing data
 1. **Add the New Primary Key Column with Identity:**

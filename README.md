@@ -15,10 +15,10 @@ This documentation aims to provide clear and concise instructions for beginners 
 ## Topics Covered
 
 - [Ubuntu Virtual Machine](ubuntu-virtual-machine/README.md)
-- [Laravel Application](laravel-application/README.md)
 - [Docker Containerization](docker-containerization/README.md)
 - [Git Commands](git-commands/README.md)
-- [ReactJS](ReactJS/README.md)
+- [Laravel Application](laravel-application/README.md)
+- [ReactJS](reactjs/README.md)
 
 ## Get Started
 

@@ -1,4 +1,4 @@
-# Deploy Laravel application with Apache on Ubuntu
+# Deploy Laravel application with Apache2
 
 1. **update ubuntu first**
 ```

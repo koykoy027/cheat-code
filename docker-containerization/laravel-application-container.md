@@ -1,5 +1,4 @@
-# Docker in Laravel project
-
+# Laravel Application Containerization
 
 1. **Create a Dockerfile: In the root of your Laravel repository, create a file named Dockerfile (without any file extension) and add the following content:**
 ```
