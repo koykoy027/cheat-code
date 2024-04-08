@@ -21,3 +21,7 @@
 - `sudo apt-get clean`: Clear the local repository of retrieved package files.
 - `sudo systemctl restart package_name | sudo service package_name restart`: restart package
 
+## APACHE2 Commands
+- `sudo a2ensite`: enable configuration
+- `sudo a2dissite`: disable configuration
+
