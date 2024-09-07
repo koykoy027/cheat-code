@@ -1,29 +1,30 @@
-# Welcome to My Personal Documentation Repository!
+# Software Development cheat sheet
 
-Welcome to my very first official documentation repository! Here you'll find comprehensive guides, tutorials, and best practices for various technologies, including Linux, Laravel, Docker, Git, and more.
-
-## About This Documentation
-
-This documentation aims to provide clear and concise instructions for beginners and experienced users alike. Whether you're just getting started or looking to deepen your knowledge, you'll find helpful resources here.
-
-## How to Use This Documentation
-
-- **Browse by Topic**: Use the table of contents to navigate to specific topics of interest.
-- **Search**: Use the search functionality to find information quickly.
-- **Contribute**: Found an error or have a suggestion? Feel free to contribute by submitting a pull request.
-
-## Topics Covered
-
-- [Ubuntu Virtual Machine](ubuntu-virtual-machine/README.md)
-- [Docker Containerization](docker-containerization/README.md)
-- [Git Commands](git-commands/README.md)
-- [Laravel Application](laravel-application/README.md)
-- [ReactJS](reactjs/README.md)
-
-## Get Started
-
-Ready to dive in? Choose a topic from the list above to start exploring the documentation.
-
-## Contributing
-
-Contributions to this documentation are welcome! If you have corrections, additions, or improvements, please submit a pull request. Together, we can make this documentation even better.
+<table>
+  <thead>
+    <tr>
+      <th colspan=2>Docker Contents</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <td>
+        <a href="https://github.com/koykoy027/DevOps-cheat-sheet/blob/main/Docker%20-%20Commands.md">Docker Commands</a>
+      </td>
+      <td>An essential guide to common Docker commands for managing containers, images, volumes, and networks.</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://github.com/koykoy027/DevOps-cheat-sheet/blob/main/Docker%20-%20Installation.md">Docker Installation</a>
+      </td>
+      <td>Step-by-step instructions for setting up an EC2 instance on Ubuntu, complete with Docker and Docker Compose installation.</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://github.com/koykoy027/DevOps-cheat-sheet/blob/main/Docker%20-%20Registry.md">Docker Registry</a>
+      </td>
+      <td>A tutorial on how to push and pull images to/from Docker Hub, including tips for managing your own Docker Registry.</td>
+    </tr>
+  </tbody>
+</table>
