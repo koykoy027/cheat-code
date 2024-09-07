@@ -4,4 +4,4 @@ My personal Software Development cheat sheet
 ## Git Contents
 | Title | Description |
 | ----- | ----------- |
-| [Git Commands](Git%20-%20-Commands.md) | Basic Git Commands |
+| [Git Commands](Git%20-%20Commands.md) | Basic Git Commands |
